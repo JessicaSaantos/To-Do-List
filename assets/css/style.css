@@ -3,4 +3,95 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+  
+
+    font-size: 62.5%;
+}
+
+body {
+    background: rgb(255,71,145);
+    background: radial-gradient(circle,
+     rgba(255,181,28,1) 0%, 
+     rgba(255,71,145,1) 100%);
+
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.board {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 52rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    background-color: lightcoral;
+    color: white;
+    border-radius: 6px;
+    padding: .4rem 0;
+}
+
+.add-card {
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.718);
+    padding: 1rem;
+    margin: 0.4rem;
+    border-radius: 6px;
+}
+.add-card:hover {
+    cursor: pointer;
+    background-color: rgba(164, 163, 163, 0.726)
+}
+
+p {
+    font-size: 1.5rem;
+}
+ul {
+    list-style: none;
+    height: 30rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: hidden;
+}
+
+ul li{
+    background-color: white;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.653);
+
+    min-width: 10rem;
+    height: 6rem;
+    margin: 0.8rem;
+    border-radius: 8px;
+    padding: 1rem;
+
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li:hover {
+    cursor: move;
+}
+
+ul li p {
+    font-size: 1.4rem;
+    margin: 1rem;
+}
+.remove {
+    border: 2px solid #c3c3c3;
+    border-radius: 100%;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    color: #c3c3c3;
+}
+.remove:hover {
+    cursor: pointer;
+    background-color: rgba(21, 21, 21, 0.504);
 }
