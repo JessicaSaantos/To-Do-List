@@ -1,3 +1,6 @@
+
+//Funções para realizar o evento de mover e soltar o card de tarefa
+// em uma das 3 colunas
 function drag (event) {
     event.dataTransfer.setData("card" , event.target.id)
 }
@@ -13,6 +16,8 @@ function drop (event , id) {
 function over (event) {
     event.preventDefault()
 }
+
+// Adicionando e removendo novos cards
 
 function addCard (elemento) {
    const ulId = elemento.previousElementSibling.id
